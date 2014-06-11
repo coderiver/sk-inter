@@ -1,0 +1,365 @@
+// style for inner page
+.container
+	width: 1150px
+	margin: 0 auto
+
+.title
+	margin-bottom: 20px
+	border-bottom: 3px solid $org
+	+clr
+	&.title_small
+		border-color: #929292 
+		.title__in
+			font-size: 24px
+	.title__in
+		display: table
+		padding-bottom: 10px
+		+fc
+		font-size: 30px
+		text-transform: uppercase
+	.title__back
+		float: right
+		margin: -9px 0 0 20px
+		padding: 16px 15px 19px 9px
+		background: $org
+		i
+			display: block
+			+s(title-back)
+
+.catalog
+	overflow: hidden
+	.catalog__list
+		margin: 0 -30px 0 0
+		font-size: 0
+	.catalog__item	
+		display: inline-block
+		width: 360px
+		margin: 0 20px 20px 0
+		padding: 5px
+		background: #FFF 
+		+tr(background .2s linear)
+		vertical-align: top
+		&:hover
+			background: $cl 
+			.catalog__slider-prev, .catalog__slider-next
+				opacity: 1 
+			.catalog__text-title, .catalog__text-in
+				color: #FFF 
+			.catalog__orderer
+				color: #c8c8c8 
+	.catalog__pic
+		position: relative
+	.catalog__title
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		padding: 10px
+		background: rgba(0,0,0,.6) 
+		z-index: 200 
+	.catalog__title-logo, .catalog__title-in
+		display: inline-block
+		vertical-align: middle
+	.catalog__title-logo
+		margin-right: 15px
+		+s(logo-ico)
+	.catalog__title-in
+		width: 265px
+		font-size: 16px
+		text-transform: uppercase
+		color: #FFF 
+	.catalog__slider
+		position: relative
+	.catalog__slider-prev, .catalog__slider-next
+		position: absolute
+		top: 92px
+		width: 70px
+		height: 90px
+		background: rgba(0,0,0,.6)
+		overflow: visible 
+		+tr(opacity .2s linear)
+		opacity: 0 
+		z-index: 200 
+		i
+			position: absolute
+			top: 25px
+	.catalog__slider-prev
+		left: 0
+		i
+			left: 22px
+			+s(sl-prev)
+	.catalog__slider-next
+		right: 0 
+		i
+			right: 22px
+			+s(sl-next)
+	.catalog__details
+		display: block
+		padding: 15px 20px
+	.catalog__text-title, .catalog__text-in, .catalog__orderer
+		+tr(color .2s linear)
+		color: $cl
+	.catalog__text
+		min-height: 110px
+	.catalog__text-title
+		margin-bottom: 10px
+		+fc
+		font-size: 16px
+	.catalog__text-in
+		font-size: 13px
+	.catalog__orderer
+		margin-top: 20px
+		padding-top: 10px
+		border-top: #C1C1C1 1px solid 
+		+fc
+		font-size: 16px
+
+.pager
+	margin-bottom: 20px
+	text-align: center
+	font-size: 0
+	a, span
+		display: inline-block
+		padding: 10px
+		vertical-align: top
+		+fc
+		font-size: 16px
+		color: $cl 
+		&.is-active
+			background: $org 
+			color: #FFF 
+			cursor: default
+
+.item
+	margin-bottom: 40px
+	padding: 5px
+	background: #FFF 
+	+clr
+	.item__slider
+		position: relative
+		float: left
+		width: 750px
+	.item__logo
+		position: absolute
+		bottom: 10px
+		left: 10px
+		+s(logo-ico)
+		z-index: 200
+	.item__slider-prev, .item__slider-next
+		position: absolute
+		top: 190px
+		width: 70px
+		height: 90px
+		background: rgba(0,0,0,.6)
+		overflow: visible 
+		z-index: 200 
+		i
+			position: absolute
+			top: 25px
+	.item__slider-prev
+		left: 0
+		i
+			left: 22px
+			+s(sl-prev)
+	.item__slider-next
+		right: 0 
+		i
+			right: 22px
+			+s(sl-next)
+	.item__details
+		display: table
+		padding: 20px 20px 20px 25px 
+	.item__title
+		margin-bottom: 5px
+		+fc
+		font-size: 16px
+	.item__text
+		margin-bottom: 15px
+	.item__text_border
+		padding-bottom: 20px
+		border-bottom: 1px solid #c1c1c1 
+
+.services
+	margin-bottom: 50px
+	font-size: 0
+	.services__item
+		display: inline-block
+		min-height: 220px
+		padding: 0 20px 20px
+		vertical-align: top
+		width: 20%
+		text-align: center
+		+box
+		+tr(background .2s linear)
+		>i
+			display: inline-block
+			vertical-align: top
+		&:hover
+			background: #FFF 
+	.services__type	
+		+fc
+		font-size: 16px
+		color: $cl 
+	@for $i from 1 through 15
+		.services__ico-#{$i}
+			+s(s#{$i})
+
+.contacts
+	margin-bottom: 40px
+	+clr
+	.contacts__left
+		float: left
+		width: 370px 
+	.contacts__right
+		float: right
+		width: 760px 
+	.contacts__title
+		margin-bottom: 20px
+		font-size: 16px
+		text-transform: uppercase
+	.contacts__details
+		padding-top: 11px
+		+fc
+		font-size: 16px
+		li
+			margin-bottom: 5px
+			+clr
+		span
+			float: left
+			width: 90px
+			margin-right: 20px 
+		a
+			color: $org 
+	.contacts__feedback
+		.fieldset
+			float: left
+			width: 330px
+			margin-right: 10px
+			.field
+				&:first-child
+					margin-bottom: 10px
+		>.field
+			float: left
+			width: 330px 
+			margin-right: 10px
+
+.map
+	border-top: 3px solid #8d8d8d
+	.map__el
+		height: 720px
+		padding-top: 3px
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

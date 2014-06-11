@@ -37,13 +37,350 @@
 // ## fonts 
 // Save fonts to /css/fonts, after that write (eot, woff, ttf):
 // +font(book, cytiapro-black-webfont)  
-// =book
-// 	font-family: "book",arial,sans-serif 
+=fc
+	font-family: "Roboto Condensed", Arial, sans-serif 
+
+$org: #e67817
+$cl: #292929
 	
 body
-	font-size: 12px 
-	font-family: Arial, sans-serif 
-	line-height: 1.4
+	min-width: 1200px
+	background: #ebebeb 
+	font-family: "Roboto", Arial, sans-serif 
+	font-size: 13px 
+	line-height: 1.2
+	color: $cl 
+	&.main-page
+		background: url(../img/bg.jpg) 50% 50%
+		background-size: cover 
+		.header
+			background: #0D121E 
+		.footer
+			background: none 
+		.footer__line
+			width: 550px
+
+a
+	text-decoration: none
+
+// common blocks   
+.wrapper
+	min-height: 100%
+	height: auto !important
+	height: 100%
+	margin: 0 auto -200px
+	.wrapper__push
+		height: 200px
+
+.header
+	height: 88px
+	margin-bottom: 35px
+	background: url(../img/bg.jpg) 50% 80%
+	background-size: cover  
+	border-bottom: 3px solid $org 
+	.header__bg
+		height: 88px
+		background: rgba(0,0,0,.7) 
+	.header__center
+		width: 1150px 
+		margin: 0 auto
+		+clr
+	.header__contacts
+		float: right
+		margin-top: 18px
+	.header__contacts-phone
+		font-size: 30px
+		color: #A2A2A2 
+		line-height: 1
+		span
+			margin-right: 10px
+			font-size: 16px
+	.header__contacts-mail
+		a
+			+fc
+			color: #FFF
+			font-size: 14px 
+
+.logo
+	float: left
+	margin: 24px 36px 0 0
+	+s(logo)
+
+.nav
+	&, ul, li
+		float: left
+	li
+		position: relative
+		&.is-active
+			background: $org
+			border-bottom: 3px solid #fff  
+			&:after
+				content: ""
+				position: absolute
+				bottom: -29px
+				left: 0
+				right: 0
+				height: 26px
+				background: $org  
+	a
+		display: block
+		height: 88px
+		padding: 0 25px
+		line-height: 88px
+		+fc
+		font-size: 16px
+		color: #FFF
+		text-transform: uppercase 
+
+.footer
+	background: url(../img/bg.jpg) 50% 80%
+	background-size: cover  
+	border-bottom: 10px solid #4d4948 
+	.footer__center
+		position: relative
+		width: 1200px
+		margin: 0 auto
+		+clr
+	.footer__down
+		position: relative
+		height: 50px
+	.footer__line
+		position: absolute
+		bottom: -10px
+		left: 0
+		width: 400px
+		background: $org
+		height: 17px
+		&:before
+			content: ""
+			position: absolute
+			top: -16px
+			left: 50%
+			margin-left: -10px
+			+arr(20,16,$org,t) 
+	.footer__created, .footer__copyright
+		float: right
+		margin-top: 20px
+		font-style: 11px
+		color: #b5b5b5
+	.footer__created
+		margin-right: 25px
+		a
+			color: $org 
+	.footer__copyright
+		margin-right: 55px
+
+.benefits
+	height: 120px
+	margin-bottom: 20px
+	background: rgba(0,0,0,.6) 
+	.benefits__center
+		width: 1200px
+		margin: 0 auto
+		+clr
+	.benefits__title
+		float: left
+		width: 400px
+		height: 140px
+		padding: 25px 35px
+		background: $org 
+		+box
+		+fc
+		font-size: 36px
+		color: #fff 
+		text-transform: uppercase
+		text-align: center
+	.benefits__list, .benefits__item
+		float: left
+	.benefits__list
+		padding: 30px 0 0 40px 
+	.benefits__item
+		width: 180px
+		margin-right: 40px
+		font-size: 13px
+		color: #FFF 
+
+.field
+	.field__el
+		input, textarea
+			width: 100%
+			+fc
+			font-size: 16px
+			+placeholder-color($cl)
+			+box
+		input
+			height: 40px 
+			padding: 0 14px 
+		textarea
+			height: 90px
+			padding: 10px 14px 
+
+.btn-arr
+	position: relative
+	width: 80px
+	height: 90px 
+	background: $org 
+	overflow: visible
+	i
+		position: absolute
+		top: 29px
+		left: 23px
+		+s(btn-arr)
 
 
-// common blocks      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
