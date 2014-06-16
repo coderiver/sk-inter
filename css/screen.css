@@ -165,8 +165,8 @@ a { text-decoration: none; }
 .contacts .contacts__feedback .fieldset .field:first-child { margin-bottom: 10px; }
 .contacts .contacts__feedback > .field { float: left; width: 330px; margin-right: 10px; }
 
-.map { border-top: 3px solid #8d8d8d; }
-.map .map__el { height: 720px; padding-top: 3px; }
+.map { border-top: 3px solid #8d8d8d; padding-top: 3px; }
+.map .map__el { min-height: 720px; }
 
 .l { *zoom: 1; }
 .l:after { content: " "; display: table; clear: both; }
